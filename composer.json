@@ -1,0 +1,22 @@
+{
+    "name": "pitc/auth",
+    "description": "Dynamic User Module",
+    "require": {
+        "pitc/module-core": "^1.0.0",
+        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.0.0|~8.1.1"
+    },
+    "type": "dynamic-user-form",
+    "version": "1.0.0",
+    "authors": [
+        {
+          "name": "Primary It Care",
+          "email": "hr@primaryitcare.com",
+          "homepage": "https://www.primaryitcare.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PITC\\DynamicForm\\": ""
+        }
+    }
+}

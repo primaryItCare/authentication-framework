@@ -1,0 +1,65 @@
+{
+	"first_name":
+	{
+		"filed_type": "text",
+		"label_name": "First Name",
+		"is_required": "",
+		"is_display": true
+	},
+	"last_name":
+	{
+		"filed_type": "text",
+		"label_name": "Last Name",
+		"is_required": "required",
+		"is_display": true
+	},
+	"name":
+	{
+		"filed_type": "text",
+		"label_name": "Full Name",
+		"is_required": "",
+		"is_display": false
+	},
+	"email":
+	{
+		"filed_type": "text",
+		"label_name": "Email Id",
+		"is_required": "required",
+		"is_display": true
+	},
+	"mobile_no":
+	{
+		"filed_type": "text",
+		"label_name": "Mobile No",
+		"is_required": "required",
+		"is_display": true
+	},
+	"country":
+	{
+		"filed_type": "select",
+		"label_name": "Country",
+		"is_required": "required",
+		"is_display": true
+	},
+	"state":
+	{
+		"filed_type": "select",
+		"label_name": "State",
+		"is_required": "required",
+		"is_display": true
+	},
+	"password":
+	{
+		"filed_type": "password",
+		"label_name": "Password",
+		"is_required": "required",
+		"is_display": true
+	},
+	"confirm_password":
+	{
+		"filed_type": "password",
+		"label_name": "Confirm Password",
+		"is_required": true,
+		"is_display": true
+	}
+}
