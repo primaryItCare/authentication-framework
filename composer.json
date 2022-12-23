@@ -10,6 +10,7 @@
     },
     "type": "dynamic-user-form",
     "version": "1.0.0",
+    "license": "MIT",
     "authors": [
         {
           "name": "Primary It Care",
@@ -19,13 +20,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "PITC\\DynamicForm\\": "src"
+            "Monolog\\": "src/",
+            "Pitc\\Auth\\": ""
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "pitc\\auth\\PitcServiceProvider"
+                "Pitc\\Auth\\PitcServiceProvider"
             ]
         }
     },
