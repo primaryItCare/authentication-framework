@@ -6,37 +6,20 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Routing\Route; 
 use Illuminate\Support\ServiceProvider;
 
-class PitcServiceProvider extends ServiceProvider
+class PitcAuthServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(PitcAuth $pitc)
     {
-        $this->offerPublishing();
-        $this->registerCommands();
-
+        $this->databasePublishing();
     }
 
     public function register()
     {  
     }
 
-
-    protected function registerCommands()
-    {
-        dd(__DIR__);
-        $this->commands([
-            Commands\CacheReset::class,
-            Commands\CreateRole::class,
-            Commands\CreatePermission::class,
-            Commands\Show::class,
-            Commands\UpgradeForTeams::class,
-        ]);
-    }
-    protected function offerPublishing()
-    {
-        if (! function_exists('config_path')) {
-            // function not available and 'publish' not relevant in Lumen
-            return;
-        } 
+ 
+    protected function databasePublishing()
+    { 
 
         $this->publishes([
             __DIR__.'/../database/migrations/create_organizations_table.php.stub' => $this->getMigrationFileName('create_organizations_table.php'),
