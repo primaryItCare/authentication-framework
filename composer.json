@@ -5,12 +5,8 @@
         "pitc",
         "auth"
     ],
-    "require": {
-        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.0.0|~8.1.1"
-    },
     "type": "dynamic-user-form",
     "version": "1.0.0",
-    "license": "MIT",
     "authors": [
         {
           "name": "Primary It Care",
@@ -18,25 +14,19 @@
           "homepage": "https://www.primaryitcare.com"
         }
     ],
+    "require": {
+        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.0.0|~8.1.1"
+    },
     "autoload": {
         "psr-4": {
-            "Monolog\\": "src/",
-            "Pitc\\Auth\\": ""
+            "PITC\\Auth\\": "pitc/auth/src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Pitc\\Auth\\PitcServiceProvider"
+                "Pitc\\Auth\\PitcAuthServiceProvider"
             ]
         }
-    },
-    "scripts": {
-        "test": "phpunit"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
