@@ -14,5 +14,5 @@
         "psr-4": {
             "BK\\Userform\\": "packages\\BK\\userform\\src"
         }
-    },
+    }
 }
