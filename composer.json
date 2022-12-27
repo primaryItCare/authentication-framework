@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "YM\\Userform\\": "packages\\YM\\userform\\src"
+            "AUTHWRAP\\Userform\\": "AUTHWRAP\\userform\\src"
         }
     }
 }
