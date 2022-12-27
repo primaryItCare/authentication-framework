@@ -15,7 +15,7 @@ class UserformServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('authwrap\Userform\Controllers\OrganizationController');
+        $this->app->make('authwrap\userform\Controllers\OrganizationController');
         $this->loadViewsFrom(__DIR__.'/views','organization');
     }
 
