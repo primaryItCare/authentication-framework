@@ -1,12 +1,12 @@
 <?php
 
-namespace BK\Userform\Controllers;
+namespace YM\Userform\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use BK\Userform\Models\{OrganizationModel,CountryModel,StateModel};
+use YM\Userform\Models\{OrganizationModel,CountryModel,StateModel};
 use App\Models\User;  
-use BK\Userform\Helpers\CustomHelper; 
+use YM\Userform\Helpers\CustomHelper; 
 use DB;
 use Validator;
 use Illuminate\Support\Facades\Auth;

@@ -1,8 +1,5 @@
-<?php
-Route::get('bk',function(){
-    echo 'Hello Balkrushn';
-});
-use  BK\Userform\Controllers\OrganizationController;  
+<?php 
+use  YM\Userform\Controllers\OrganizationController;  
 
 Route::group(['prefix' => '/organization'], function () {
     Route::get('/',[OrganizationController::class,'index'])->name('organization'); 

@@ -1,6 +1,6 @@
 <?php
 
-namespace BK\Userform\Requests;
+namespace YM\Userform\Requests;
 
 use Illuminate\Foundation\Http\FormRequest; 
 

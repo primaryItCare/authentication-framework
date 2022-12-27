@@ -1,6 +1,6 @@
 <?php
 
-namespace BK\Userform;
+namespace YM\Userform;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Filesystem\Filesystem;
@@ -15,7 +15,7 @@ class UserformServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('BK\Userform\Controllers\OrganizationController');
+        $this->app->make('YM\Userform\Controllers\OrganizationController');
         $this->loadViewsFrom(__DIR__.'/views','organization');
     }
 

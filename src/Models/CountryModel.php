@@ -1,6 +1,6 @@
 <?php
 
-namespace BK\Userform\Models;
+namespace YM\Userform\Models;
  
 use Illuminate\Database\Eloquent\Model;
 

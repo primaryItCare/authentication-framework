@@ -1,5 +1,5 @@
 {
-    "name": "bk/userform",
+    "name": "ym/userform",
     "description": "Dynamic Organization form",
     "authors": [
         {
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BK\\Userform\\": "packages\\BK\\userform\\src"
+            "YM\\Userform\\": "packages\\YM\\userform\\src"
         }
     }
 }
