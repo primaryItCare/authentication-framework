@@ -4,9 +4,9 @@ namespace authwrap\Userform\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use authwrap\Userform\Models\{OrganizationModel,CountryModel,StateModel};
+use authwrap\userform\Models\{OrganizationModel,CountryModel,StateModel};
 use App\Models\User;  
-use authwrap\Userform\Helpers\CustomHelper; 
+use authwrap\userform\Helpers\CustomHelper; 
 use DB;
 use Validator;
 use Illuminate\Support\Facades\Auth;
@@ -32,7 +32,7 @@ class OrganizationController extends Controller
            return abort(404);
         }
     }
-    public function getAjaxList(\authwrap\Userform\Requests\FilterList $request){  
+    public function getAjaxList(\authwrap\userform\Requests\FilterList $request){  
         if($request->ajax()){
             try { 
                 $recordSet = OrganizationModel::query();
