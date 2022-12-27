@@ -1,12 +1,12 @@
 <?php
 
-namespace AUTHWRAP\Userform\Controllers;
+namespace authwrap\Userform\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use AUTHWRAP\Userform\Models\{OrganizationModel,CountryModel,StateModel};
+use authwrap\Userform\Models\{OrganizationModel,CountryModel,StateModel};
 use App\Models\User;  
-use AUTHWRAP\Userform\Helpers\CustomHelper; 
+use authwrap\Userform\Helpers\CustomHelper; 
 use DB;
 use Validator;
 use Illuminate\Support\Facades\Auth;

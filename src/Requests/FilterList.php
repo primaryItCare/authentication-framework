@@ -1,6 +1,6 @@
 <?php
 
-namespace AUTHWRAP\Userform\Requests;
+namespace authwrap\Userform\Requests;
 
 use Illuminate\Foundation\Http\FormRequest; 
 
