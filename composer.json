@@ -1,0 +1,18 @@
+{
+    "name": "bk/userform",
+    "description": "Dynamic Organization form",
+    "authors": [
+        {
+            "name": "BalkrushnKapadiya",
+            "email": "balkrushnkapadiya92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.0.0|~8.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BK\\Userform\\": "packages\\BK\\userform\\src"
+        }
+    },
+}
