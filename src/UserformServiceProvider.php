@@ -1,6 +1,6 @@
 <?php
 
-namespace YM\Userform;
+namespace AUTHWRAP\Userform;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Filesystem\Filesystem;
@@ -15,7 +15,7 @@ class UserformServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('YM\Userform\Controllers\OrganizationController');
+        $this->app->make('AUTHWRAP\Userform\Controllers\OrganizationController');
         $this->loadViewsFrom(__DIR__.'/views','organization');
     }
 

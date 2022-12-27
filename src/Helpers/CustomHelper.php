@@ -1,6 +1,6 @@
 <?php
 
-namespace YM\Userform\Helpers;
+namespace AUTHWRAP\Userform\Helpers;
   
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;

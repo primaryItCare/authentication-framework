@@ -1,6 +1,6 @@
 <?php
 
-namespace YM\Userform\Models;
+namespace AUTHWRAP\Userform\Models;
  
 use Illuminate\Database\Eloquent\Model;
 

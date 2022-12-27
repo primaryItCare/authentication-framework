@@ -1,5 +1,5 @@
 <?php 
-use  YM\Userform\Controllers\OrganizationController;  
+use  AUTHWRAP\Userform\Controllers\OrganizationController;  
 
 Route::group(['prefix' => '/organization'], function () {
     Route::get('/',[OrganizationController::class,'index'])->name('organization'); 
