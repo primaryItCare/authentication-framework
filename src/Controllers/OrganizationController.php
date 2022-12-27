@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Auth;
 class OrganizationController extends Controller
 {
     public function index(){
-                $user = CustomHelper::getUserId();
-                dd($user);
         $formData = CustomHelper::getFormData('organization.txt'); 
         return view('organization::organization-list',compact('formData'));
     } 
@@ -34,10 +32,10 @@ class OrganizationController extends Controller
            return abort(404);
         }
     }
-    public function getAjaxList(\BK\Userform\Requests\FilterList $request){  
+    public function getAjaxList(\authwrap\Userform\Requests\FilterList $request){  
         if($request->ajax()){
             try { 
-                $recordSet = OrganizationModel::where('user_id',Auth::user()->id);
+                $recordSet = OrganizationModel::query();
                 if (!empty($request->search['value'])) { 
                     $search = $request->search['value'];
                     $recordSet->where('name','LIKE','%'.$search.'%');
