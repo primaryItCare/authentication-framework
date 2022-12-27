@@ -1,0 +1,82 @@
+{
+	"name":
+	{
+		"filed_type": "text",
+		"label_name": "Organization name",
+		"is_required": "",
+		"is_display": true,
+		"is_listing": true
+	},
+	"business_as":
+	{
+		"filed_type": "text",
+		"label_name": "Bisiness as",
+		"is_required": "",
+		"is_display": true,
+		"is_listing": true
+	},
+	"ein_no":
+	{
+		"filed_type": "text",
+		"label_name": "EIN Number",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": true
+	},
+	"register_id":
+	{
+		"filed_type": "text",
+		"label_name": "Registered ID",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": false
+	},
+	"address_1":
+	{
+		"filed_type": "text",
+		"label_name": "Address 1",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": false
+	},
+	"address_2":
+	{
+		"filed_type": "text",
+		"label_name": "Address 2",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": false
+	},
+	"city":
+	{
+		"filed_type": "text",
+		"label_name": "City",
+		"is_required": "required",
+		"is_display": false,
+		"is_listing": false
+	},
+	"country":
+	{
+		"filed_type": "select",
+		"label_name": "Country",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": true
+	},
+	"state":
+	{
+		"filed_type": "select",
+		"label_name": "State",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": true
+	},
+	"pincode":
+	{
+		"filed_type": "text",
+		"label_name": "Pincode",
+		"is_required": "required",
+		"is_display": true,
+		"is_listing": false
+	}
+}
